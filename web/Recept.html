@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Egerton University Hospital Management System</title>
+    <style>
+        body {
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url("your-background-image.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 150vh;
+            font-family: Arial, sans-serif;
+            color: white; /* Text color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        form {
+            width: 80%;
+            max-width: 500px; /* Adjust width as needed */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            color: black; /* Text color for form fields */
+        }
+        th {
+            text-align: left;
+        }
+        input[type="text"], input[type="submit"] {
+            width: calc(100% - 6px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="ReceptionPost" method="post">
+        <p>KINDLY ENTER THE PATIENT DETAILS BELOW</p>
+        <table>
+            <tr>
+                <th>StudentRegNo:</th>
+                <th><input type="text" name="studentRegNo"/></th>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <th><input type="text" name="name"/></th>
+            </tr>
+            <tr>
+                <th>Consultation Room 1:</th>
+                <th><input type="text" name="consultationRoom1"/></th>
+            </tr>
+            <tr>
+                <th>Consultation Room 2:</th>
+                <th><input type="text" name="consultationRoom2"/></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><input type="submit" value="Submit"/></th>
+            </tr>
+        </table>
+        <p>Thank you, click on the submit button below to submit the details.</p>
+    </form>
+</body>
+</html>
+

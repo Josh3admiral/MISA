@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .main {
+            background-image: url('img/EGER1.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-form {
+            width: 300px;
+            background: green;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .login-form select,
+        .login-form input[type="number"],
+        .login-form input[type="password"],
+        .login-form input[type="submit"] {
+            width: calc(100% - 6px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-form input[type="submit"] {
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form class="login-form" action="LogServlet2" method="post">
+            <label for="role">Consultation Room:</label>
+            <select id="role" name="role">
+                <option value="consultationRoom1">Consultation Room 1</option>
+                <option value="consultationRoom2">Consultation Room 2</option>
+            </select>
+            <input type="submit" value="Login" />
+        </form>
+    </div>
+</body>
+</html>

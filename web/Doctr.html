@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Egerton University Hospital Management System</title>
+    <style>
+        body {
+            width: 100%;
+            background-image: url('img/EGER2.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 150vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+        form {
+            width: 80%;
+            margin: 50px auto;
+            background: grey;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+        }
+        th {
+            text-align: right;
+            padding-right: 10px;
+        }
+        th, td {
+            padding: 5px;
+        }
+        input[type="text"], input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1{
+            font: bold;
+            font-size: 90px;
+            background-color: green; 
+            color: white;
+        }
+        input[type="text"] {
+            height: 90px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        p {
+            text-align: center;
+            font: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>EGERTON UNIVERSITY H.M.S</h1>
+    <form action="DoctorServlet" method="post">
+        <p style="font: bold;">KINDLY ENTER THE PATIENT DETAILS BELOW</p>
+        <table>
+            <tr>
+                <th>Student Registration Number:</th><td><input type="text" name="studentRegNo" required/></td>
+            </tr>
+            <tr>
+                <th>Name:</th><td><input type="text" name="name" required/></td>
+            </tr>
+            <tr>
+                <th>Symptoms:</th><td><input type="text" name="symptoms" required/></td>
+            </tr>
+            <tr>
+                <th>Prescription:</th><td><input type="text" name="prescription" required/></td>
+            </tr>
+            <tr>
+                <th>Lab Test:</th><td><input type="text" name="labTest"/></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Submit"/></td>
+            </tr>
+        </table>
+        <p>Thank you, click on the submit button below to submit the details.</p>
+    </form>
+</body>
+</html>
